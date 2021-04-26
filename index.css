@@ -62,7 +62,7 @@ nav ul {
     display: inline;
 }
 
-.contact-btn a {
+/* .contact-btn a {
     margin-right: 30px;
     padding: 8px 18px;
     border: 1px solid #204156;
@@ -71,7 +71,7 @@ nav ul {
 .contact-btn a:active {
     position: relative;
     bottom: 2px;
-}
+} */
 
 nav a {
     height: 60px;
