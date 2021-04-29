@@ -14,6 +14,10 @@ body {
     margin: 0;
 }
 
+header {
+    background: #152736
+}
+
 .page-title {
     color: #FFF;
     text-align: center;
@@ -22,11 +26,9 @@ body {
 }
 
 .page-description {
-    border: 1px solid #000;
-    color: #FFF;
+    color: #7f6921;
     text-align: center;
-    /* padding: 10px; */
-    font-size: 200%
+    font-size: 200%;
 }
 
 .gallery {
