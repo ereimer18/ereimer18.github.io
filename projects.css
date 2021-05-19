@@ -1,0 +1,103 @@
+html, body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    /* background-image: url("greywood.jpg"); */
+    background: rgba(54, 55, 58, 0.5);
+    background-position: center top;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background: #152736
+}
+
+.page-title {
+    color: #FFF;
+    text-align: center;
+    font-weight: 10;
+    font-size: 400%;
+}
+
+.page-description {
+    color: #7f6921;
+    text-align: center;
+    font-size: 200%
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* padding: 30px; */
+}
+
+.gallery-item {
+    display: flex;
+    border: 5px solid #FFF;
+    width: 30%;
+}
+
+.gallery-item .thumbnail {
+    width: 100%;
+}
+
+/* TEXT */
+
+/* .biography {
+    display: flex;
+    justify-content: center;
+} */
+
+.projects {
+    color: #FFF;
+    width: 100%;
+    font-size: 125%;
+    /* background: rgba(54, 55, 58, 0.5); */
+}
+
+/* FOOTER */
+
+nav {
+    background-color: #FFF;
+    bottom: 0%;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+}
+
+nav li {
+    margin: 0;
+    padding: 0 10px;
+    display: inline;
+}
+
+nav ul {
+    display: inline;
+}
+
+.contact-btn a {
+    margin-right: 30px;
+    padding: 8px 18px;
+    border: 1px solid #204156;
+}
+
+.contact-btn a:active {
+    position: relative;
+    bottom: 2px;
+}
+
+nav a {
+    height: 60px;
+    line-height: 60px;
+    color: #204156;
+    text-decoration: none;
+}
