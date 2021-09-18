@@ -1,0 +1,186 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    min-height: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #152736;
+    color: #fff;
+}
+
+header .page-description {
+    color: #a88a25;
+}
+
+header .page-description a{
+    color: #a88a25;
+    text-decoration: none;
+}
+
+header .page-description a:hover a:visited{
+    color: #a88a25;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#navbar a:visited {
+    color: #000;
+}
+
+.main_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+    color: #000;
+}
+
+.profile {
+    float: left;
+    display: flex;
+    width: 40%;
+}
+
+.profile #image {
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    box-sizing: border-box;
+    width: 60%;
+    position: relative;
+}
+
+.sidebar .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.sidebar .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.sidebar .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(50%);
+}
+
+.sidebar .card:hover .face.face1{
+    background: #d80a36;
+    transform: translateY(0);
+}
+
+.sidebar .card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.sidebar .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.sidebar .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.sidebar .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.sidebar .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%);
+}
+
+.sidebar .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+/* .sidebar .card .face.face2 .content a{
+    
+} */
+
+.sidebar .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.sidebar .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
