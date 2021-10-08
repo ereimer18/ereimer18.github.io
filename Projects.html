@@ -2,42 +2,82 @@
 <head>
     <title>Projects</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="page-title">Projects</h1>
-        <p class="page-description">Collegiate and Personal Projects <br> UNDER CONSTRUCTION <br> Check back soon!</p>
+    <header id="main-header">
+        <div class="container">
+            <h1 class="page-title">Projects</h1>
+            <h3 class="page-description">Collegiate and Personal</h3>
+        </div>
     </header>
 
-    <!-- <div class="gallery">
-        <figure class="gallery-item">
-            <img class="thumbnail" src="Profile.jpg">
-        </figure>
-    </div> -->
-
-    <div class="projects">
-        <ul>
-            <li><a href="servant_poster.pdf"><b>Servant Engineering Tactile Feedback</b></a></li>
-            <li><a href="rfp_proposal.pdf"><b>Data Communications and Networking RFP Proposal</b></a></li>
-        </ul>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html"><b>Home</b></a></li>
-            <li><a href="AboutMe.html"><b>About Me</b></a></li>
-            <li><a href="https://www.linkedin.com/in/ethan-reimer-0487a9178/"><b>LinkedIn</b></a></li>
-            <li><a href="https://github.com/ereimer18"><b>GitHub</b></a></li>
-            <li><a href="https://portfolium.com/EthanReimer"><b>Portfolium</b></a></li>
-        </ul>
-
+    <!-- Navigation Bar of internal and external links-->
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="/documents/ereimer_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/ethanreimer/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ereimer18" target="_blank">GitHub</a></li>
+                <li><a href="https://portfolium.com/EthanReimer" target="_blank">Portfolium</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <main class="main_content">
+        
+        <div class="project-content">
+            <div class="project-container">
+                <table id="projects">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Course</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dark">
+                            <td>Mixed Reality Solution</td>
+                            <td>Senior Design</td>
+                            <td>An augmented reality solution in conjunction with <a href="https://daimler-trucksnorthamerica.com/" target="_blank">Daimler Trucks</a> leveraging the capabilites of a Microsoft HoloLens to improve critical workflow procedures; currently in progress.</td>
+                        </tr>
+                        <tr class="light">
+                            <td>Haptic Feedback Braille Device</td>
+                            <td>Servant Engineering</td>
+                            <td>A haptic feedback device designed to help visually impaired students understand graphical images in a familiar fashion to braille; view project poster <a href="projects/servant_poster.pdf" target="_blank">here</a>.</td>
+                        </tr>
+                        <tr class="dark">
+                            <td>Request for Proposal</td>
+                            <td>Data Communications</td>
+                            <td>A response to an RFP from a company seeking to improve their network setup and manage network permissions.</td>
+                        </tr>
+                        <tr class="light">
+                            <td>Chess</td>
+                            <td>Object Oriented Programming</td>
+                            <td>A command-line driven game of chess demonstrating the fundamentals of OOP.</td>
+                        </tr>
+                        <tr class="dark">
+                            <td>Movie Database</td>
+                            <td>Database Systems</td>
+                            <td>An excercise in building and managing a database given large amounts of data.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="display">
+            <img id="image" src="images/terminal.png">
+        </div>
+    </main>
+
+
+    
 </body>
 </html>
 
-<p>
-    
-    George Fox University College of Engineering students participate in Servant Engineering and Senior Design teams. My senior design team is working in conjunction with Daimler Trucks to create an Augmented Reality application for the Microsoft HoloLens using Unity and Microsoft's Mixed Reality Tool Kit that will provide important schematics and notifications with Cortana voice assistant functionality. 
-</p>

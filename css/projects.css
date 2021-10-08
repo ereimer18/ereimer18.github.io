@@ -1,103 +1,126 @@
-html, body {
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
     min-height: 100%;
+    margin: 0;
+
     display: flex;
     flex-direction: column;
-    font-weight: 300;
-    line-height: 1.5;
 }
 
-body {
-    font-family: 'lato', sans-serif;
-    /* background-image: url("greywood.jpg"); */
-    background: rgba(54, 55, 58, 0.5);
-    background-position: center top;
-    background-size: cover;
-    margin: 0;
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
-    background: #152736
+    background-color: #152736;
+    color: #fff;
 }
 
-.page-title {
-    color: #FFF;
-    text-align: center;
-    font-weight: 10;
-    font-size: 400%;
+header .page-description {
+    color: #a88a25;
 }
 
-.page-description {
-    color: #7f6921;
-    text-align: center;
-    font-size: 200%
+header .page-description a{
+    color: #a88a25;
+    text-decoration: none;
 }
 
-.gallery {
+header .page-description a:hover a:visited{
+    color: #a88a25;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#navbar a:visited {
+    color: #000;
+}
+
+main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
-    /* padding: 30px; */
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: #fff;
 }
 
-.gallery-item {
-    display: flex;
-    border: 5px solid #FFF;
+.display {
+    float: right;
     width: 30%;
 }
 
-.gallery-item .thumbnail {
-    width: 100%;
+.display #image {
+    width: 90%;
 }
 
-/* TEXT */
-
-/* .biography {
+.project-content {
+    margin: auto;
+    float: left;
+    width: 70%;
     display: flex;
     justify-content: center;
-} */
-
-.projects {
-    color: #FFF;
-    width: 100%;
-    font-size: 125%;
-    /* background: rgba(54, 55, 58, 0.5); */
+    align-items: center;
 }
 
-/* FOOTER */
-
-nav {
-    background-color: #FFF;
-    bottom: 0%;
-    position: fixed;
-    left: 0%;
-    right: 0%;
+.project-container {
+    width: 90%;
 }
 
-nav li {
-    margin: 0;
-    padding: 0 10px;
-    display: inline;
+a, a:visited {
+    color: #fff;
 }
 
-nav ul {
-    display: inline;
+a:hover {
+    color: darkcyan;
 }
 
-.contact-btn a {
-    margin-right: 30px;
-    padding: 8px 18px;
-    border: 1px solid #204156;
+#projects {
+    border: solid black 2px;
+    padding: 5px;
+    border-collapse: collapse;
 }
 
-.contact-btn a:active {
-    position: relative;
-    bottom: 2px;
+#projects th {
+    background-color: #555;
 }
 
-nav a {
-    height: 60px;
-    line-height: 60px;
-    color: #204156;
-    text-decoration: none;
+#projects td {
+    padding: 10px;
+    border: solid black 2px;
+}
+
+#projects .light {
+    background-color: rgb(63, 63, 63);
 }
