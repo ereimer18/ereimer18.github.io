@@ -78,7 +78,6 @@ main {
 
 .profile {
     float: left;
-    display: flex;
     width: 40%;
 }
 
@@ -90,6 +89,13 @@ main {
     margin: auto;
     float: right;
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-container {
+    width: 90%;
 }
 
 a, a:visited {
@@ -98,4 +104,10 @@ a, a:visited {
 
 a:hover {
     color: darkcyan;
+}
+
+#technical_skills {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
 }
