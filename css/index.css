@@ -184,3 +184,6 @@ header .page-description a:hover a:visited{
     color: #fff;
 }
 
+#contact_btn {
+    font-size: 1em;
+}
