@@ -1,0 +1,118 @@
+body {
+   font-family: Helvetica, sans-serif;
+   color: #555;
+   background-image: url('travel-wallpaper.jpg') 
+}
+
+#main {
+   width: 60%;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #c2cdd8;
+   padding-top: 50px;
+   padding-bottom: 70px;
+}
+
+#header {
+   text-align: center;
+}
+
+#header h1 {
+   font-size: 3.5em;
+}
+
+#input-section {
+   width: 65%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#user-input {
+   border: 1px solid rgb(133, 133, 133);
+   margin-bottom: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font-size: 1.3em;
+   width: 95%;
+   padding: 10px;
+}
+
+#buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 5px;
+}
+
+button {
+   font-size: 1em;
+   width: 33%;
+   padding: 5px;
+   background-color: rgb(144, 243, 149);
+   border: none;
+}
+
+
+#content {
+   margin-top: 30px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-content: center;
+}
+
+#welcome {
+   width: 70%;
+   font-size: 1.5em;
+   text-align: center;
+}
+
+#country-info {
+   font-size: 1.6em;
+   padding: 5px;
+}
+
+#language {
+   text-align: center;
+   font-size: 1.5em;
+   padding: 5px;
+}
+
+#currency {
+   text-align: center;
+   font-size: 1.5em;
+   padding: 5px;
+}
+
+#forecast {
+   font-size: 1.5em;
+   padding: 5px;
+   text-align: center;
+}
+
+.hidden {
+   display: none;
+}
+
+.error-msg {
+   color: red;
+}
+
+table {
+   margin-bottom: 15px;
+}
+
+table caption {
+   font-weight: bold;
+}
+
+table td {
+   text-align: center;
+   padding: 3px 8px;
+}

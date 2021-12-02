@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Travel Guide</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="oriDomi-gh-pages/oridomi.min.js"></script>
+      <script src="script.js"></script>
+   </head>
+
+   <body>
+      <div id="main">
+         <div id="header">
+            <h1>Ethan's Travel Guide</h1>
+            <section id="input-section">
+               <div id="input-box">
+                  <input type="text" id="user-input" placeholder="Enter a country, language or currency">
+                  <span class="error-msg hidden" id="value-error">Enter a country, language or currency</span>
+               </div>
+               <div id="buttons">
+                  <button id="countryBtn">By Country</button>
+                  <button id="languageBtn">By Language</button>
+                  <button id="currencyBtn">By Currency</button>
+               </div>
+            </section>
+         </div>
+
+         <div id="content">
+            <section id="welcome" class="hidden">
+               <h3>Looking to Travel??</h3>
+               <p>Enter a country to find out important information to help plan that trip!</p>
+               <p>Language student looking to practice your skills? Hoping to avoid the language barrier? Search by language to find where you can go!</p>
+               <p>Maybe you're the practical type and don't want to worry about exchange rates, or you want to use those extra euros from last summer. Search by currency to find all countries using the same currency!</p>
+               <div id="map-container">
+                  <img id="map" src='map.jpg' alt="map" width="70%">
+               </div>
+            </section>
+            <section id="language" class="hidden">
+               <p>Participating Countries: </p>
+               <p id="language-participants"></p>
+            </section>
+            <section id="currency" class="hidden">
+               <p>Participating Countries: </p>
+               <p id="currency-participants"></p>
+            </section>
+            <section id="country-info" class="hidden">
+               <p id="country-name"></p>
+               <p id="country-region"></p>
+               <p id="country-capital"></p>
+               <p id="country-languages"></p>
+               <p id="country-currencies"></p>
+            </section>
+            <section id="forecast" class="hidden">
+               <h2>5 Day Forecast</h2>
+
+               <p id="loading-error" class="error-msg"></p>
+               <table id="results">
+                  <caption id="capital-forecast"></caption>
+                  <tr>
+                     <td id="day1-name"></td>
+                     <td id="day2-name"></td>
+                     <td id="day3-name"></td>
+                     <td id="day4-name"></td>
+                     <td id="day5-name"></td>
+                  </tr>
+                  <tr>
+                     <td id="day1-high"></td>
+                     <td id="day2-high"></td>
+                     <td id="day3-high"></td>
+                     <td id="day4-high"></td>
+                     <td id="day5-high"></td>
+                  </tr>
+                  <tr>
+                     <td id="day1-low"></td>
+                     <td id="day2-low"></td>
+                     <td id="day3-low"></td>
+                     <td id="day4-low"></td>
+                     <td id="day5-low"></td>
+                  </tr>
+                  <tr>
+                     <td><img id="day1-image"</td>
+                     <td><img id="day2-image"</td>
+                     <td><img id="day3-image"</td>
+                     <td><img id="day4-image"</td>
+                     <td><img id="day5-image"</td>
+                  </tr>
+               </table>
+            </section>
+         </div>
+      </div>
+      
+
+      
+   </body>
+</html>
